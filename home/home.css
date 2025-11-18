@@ -6,9 +6,9 @@
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 100vh;
-    width: 100vw;
-
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden; /* remove horizontal scroll */
 }
 
 header {
@@ -48,14 +48,82 @@ main {
     margin-top: 50px;
 }
 
-#img {
-    height: 100px;
+/* Parallax sections: use background-image on the div (set inline in HTML) */
+.parallax {
+    height: 120px; /* same visual height as before */
     width: 100%;
-    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* parallax effect */
 }
 
 #noimg {
-    height: 200px;
+    height: 230px;
     width: 100%;
     background-color: #71B862;
+    font-size: 1.7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#wnoimg {
+    height: 230px;
+    width: 100%;
+    background-color: white;
+    font-size: 1.7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#wnoimg img {
+    height: 50px;
+    width: auto;
+}
+
+#noimg img {
+    height: 50px;
+    width: auto;
+}
+
+.wbutton {
+    width: 130px;
+    height: 30px;
+    font-size: 0.6em;
+    padding: 20px, 10px;
+    border: 0.5px solid black;
+    border-radius: 4px;
+}
+
+.gbutton {
+    width: 130px;
+    height: 30px;
+    font-size: 0.6em;
+    color: white;
+    padding: 20px, 10px;
+    border: 0.5px solid black;
+    border-radius: 4px;
+    background-color: #0D4924;
+}
+
+.wbutton:hover, .gbutton:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-out;
+}
+
+footer {
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 0.8em;
 }
