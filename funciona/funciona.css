@@ -6,13 +6,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #71B862;
+    background-color:  #D9D9D9;
     height: 100vh;
     width: 100vw;
 }
 
 header {
-    background-color: #D9D9D9;
+    background-color: #71B862;
     padding: 20px;
     height: 100px;
     display: flex;
@@ -25,8 +25,8 @@ header {
 }
 
 .button {
-    background-color: #0D4924;
-    color: white;
+    background-color: #D9D9D9;
+    color: black;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -35,8 +35,8 @@ header {
 }
 
 #inicio-btn {
-    background-color: #71B862;
-    color: #0D4924;
+    background-color: #0D4924;
+    color: #D9D9D9;
 }
 
 .button:hover {
@@ -52,12 +52,13 @@ main {
 
 .card {
     background-color: #0D4924;
-    border-radius: 8px;
+    border-radius: 4px;
     color: white;
     width: 200px;
     height: 250px;
     margin: 20px;
     margin-top: 130px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
 }
 
 .card h2 {
@@ -75,7 +76,7 @@ main {
 
 .card img {
     display: block;
-    margin: 12px auto 6px auto;
+    margin: 16px auto 40px auto;
     width: auto;
     max-width: 120px;
     height: auto;
@@ -87,4 +88,9 @@ header img {
     height: 180px;
     width: auto;
     margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
